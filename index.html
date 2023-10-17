@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Form Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+    <style>
+    body {
+        font-family: cursive;  
+        background-color: blanchedalmond; 
+    }
+    h1 { 
+       text-align: center; 
+    }
+    form {
+        width: 300px;
+        margin: 0 auto; 
+    }
+    
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+    }
+    
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+    
+    #result {
+        margin-top: 20px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    } 
+    </style>
+</head> 
+<body> 
+    <h1>ABOUT YOURSELF!!</h1>
+    <form id="myForm">
+        <b><label for="name">Name:</label></b>
+        <input type="text" id="name" name="name"><br><br>
+        <b><label for="email">Email:</label></b>
+        <input type="email" id="email" name="email"><br><br>
+
+        <b><label for="Your Hobby....">Your Hobby....</label></b><br>
+        <textarea id="Your Hobby...." name="Your Hobby...."></textarea><br> 
+         <h4>Are you a...</h4>
+        <select id="selectId"> 
+            <option value="">"Subhe Utha Huva Baacha..."</option>
+            <option value="Subhe Utha Huva Baacha...">"Subhe Utha Huva Baacha..."</option> 
+            <option value="I don't sleep!!">"I don't sleep!!"</option>
+          </select> 
+          <h4>Favourite thing to do:</h4>
+          <label><input type = "radio" name = "name" id = "Sleeping">Sleeping</label><br> 
+          <label><input type = "radio" name = "name" id = "Gaming">Gaming</label><br>   
+          <label><input type = "radio" name = "name" id = " Reading">Reading</label><br>  
+          <label><input type = "radio" name = "name" id = "Writing">Writing</label><br>
+         <h4>What do you do for fun? Check that apply:</h4> 
+<input type="checkbox" name="Hiking" value="yes">Hiking<br> 
+<input type="checkbox" name="Running" value="yes">Running<br> 
+<input type="checkbox" name="Gym" value="yes">Gym<br> 
+<input type="checkbox" name="Movie" value="yes">Movie<br> 
+<input type="checkbox" name="Music" value="yes">Music<br><br>
+<b><input type="checkbox" name="Were u truthful?" value="yes">Were u truthful?<br></b>       
+    <input type="submit" value="Submit">
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
+
